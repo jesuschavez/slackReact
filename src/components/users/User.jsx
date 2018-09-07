@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 class User extends Component {
   render(){
+    let user = this.props.user;
     return(
       <li>
-        {this.props.user.name}
+        {user.name}
       </li>
     )
   }

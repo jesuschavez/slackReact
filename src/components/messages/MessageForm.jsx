@@ -19,7 +19,8 @@ class MessageForm extends Component {
           ref='message'
           type='text'
           className='form-control'
-          placeholder='Add Message...' />
+          placeholder='Add Message...'
+        />
       )
     }
 
