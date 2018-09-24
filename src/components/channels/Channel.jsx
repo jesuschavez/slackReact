@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 
 class Channel extends Component {
 
+  // :Eventtrigger -> runs setChannel func
   onClick(e){
     e.preventDefault();
     const {setChannel, channel} = this.props;
     setChannel(channel);
   }
 
+  //render Channel List
   render(){
     const {channel, activeChannel} = this.props;
     const active = channel === activeChannel ? 'active' : '';
